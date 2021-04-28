@@ -25,7 +25,7 @@ class CalculatorPanel extends StatefulWidget {
 
 class _CalculatorPanelState extends State<CalculatorPanel> {
   final _textController = TextEditingController();
-  var isResultPresented = false;
+  var isResultNaN = false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -60,8 +60,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -100,8 +100,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -140,8 +140,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -175,8 +175,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Text('÷'),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -210,8 +210,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Icon(Icons.backspace),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       } else if (_textController != null &&
                           _textController.text.length > 0) {
@@ -265,8 +265,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       }
                     },
                     onLongPress: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                       }
                       _textController.text = '';
                     },
@@ -289,8 +289,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -329,8 +329,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -369,8 +369,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -404,8 +404,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Text('×'),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -455,8 +455,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -495,8 +495,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -535,8 +535,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -570,8 +570,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Text('-'),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -621,8 +621,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -661,36 +661,35 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                       ),
                     ),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
-                      if (!_textController.text.contains('.')) {
-                        if (_textController.text.trim() == '') {
-                          _textController.text += '0.';
+
+                      if (_textController.text.trim() == '') {
+                        _textController.text += '0.';
+                      } else {
+                        var selectStart = _textController.selection.start;
+                        var selectEnd = _textController.selection.end;
+                        var currentText = _textController.text;
+                        if (_textController.selection.end == -1) {
+                          _textController.text += '.';
                         } else {
-                          var selectStart = _textController.selection.start;
-                          var selectEnd = _textController.selection.end;
-                          var currentText = _textController.text;
-                          if (_textController.selection.end == -1) {
-                            _textController.text += '.';
-                          } else {
-                            _textController.text = currentText.substring(
-                                  0,
-                                  selectStart,
-                                ) +
-                                '.' +
-                                currentText.substring(
-                                  selectEnd,
-                                  currentText.length,
-                                );
-                            _textController.selection =
-                                TextSelection.fromPosition(
-                              TextPosition(
-                                offset: selectStart + 1,
-                              ),
-                            );
-                          }
+                          _textController.text = currentText.substring(
+                                0,
+                                selectStart,
+                              ) +
+                              '.' +
+                              currentText.substring(
+                                selectEnd,
+                                currentText.length,
+                              );
+                          _textController.selection =
+                              TextSelection.fromPosition(
+                            TextPosition(
+                              offset: selectStart + 1,
+                            ),
+                          );
                         }
                       }
                     },
@@ -712,8 +711,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Text('+'),
                     onPressed: () {
-                      if (isResultPresented) {
-                        isResultPresented = false;
+                      if (isResultNaN) {
+                        isResultNaN = false;
                         _textController.text = '';
                       }
                       var selectStart = _textController.selection.start;
@@ -747,10 +746,12 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   child: TextButton(
                     child: Text('='),
                     onPressed: () {
-                      isResultPresented = true;
-                      _textController.text =
-                          convertExpressionToResult(_textController.text)
-                              .toString();
+                      double result =
+                          convertExpressionToResult(_textController.text);
+                      if (result.isNaN) {
+                        isResultNaN = true;
+                      }
+                      _textController.text = result.toString();
                     },
                   ),
                 ),
