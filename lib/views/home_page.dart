@@ -52,6 +52,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '7',
@@ -92,6 +95,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '8',
@@ -132,6 +138,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '9',
@@ -172,6 +181,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text('÷'),
                     onPressed: () {
@@ -207,6 +219,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Icon(Icons.backspace),
                     onPressed: () {
@@ -281,6 +296,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '4',
@@ -321,6 +339,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '5',
@@ -361,6 +382,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '6',
@@ -401,6 +425,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text('×'),
                     onPressed: () {
@@ -436,6 +463,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(''),
                     onPressed: null,
@@ -447,6 +477,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '1',
@@ -487,6 +520,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '2',
@@ -527,6 +563,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '3',
@@ -567,6 +606,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text('-'),
                     onPressed: () {
@@ -602,6 +644,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(''),
                     onPressed: null,
@@ -613,6 +658,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '0',
@@ -653,6 +701,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(
                       '.',
@@ -699,6 +750,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text(''),
                     onPressed: null,
@@ -708,6 +762,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text('+'),
                     onPressed: () {
@@ -743,6 +800,9 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
                   ),
                 ),
                 Container(
+                  constraints: BoxConstraints(
+                    minHeight: 120,
+                  ),
                   child: TextButton(
                     child: Text('='),
                     onPressed: () {
