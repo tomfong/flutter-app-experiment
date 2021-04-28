@@ -35,6 +35,8 @@ class _CalculatorPanelState extends State<CalculatorPanel> {
             padding: EdgeInsets.fromLTRB(0, 0, 0, 15),
             alignment: Alignment.bottomCenter,
             child: TextField(
+              readOnly: true,
+              showCursor: true,
               textAlign: TextAlign.end,
               decoration: InputDecoration(
                 border: InputBorder.none,
